@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 20px;
+    background-color: #55b3d5;
+    text-align: center;
+}
+.container{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1vmin;
+    position: relative;
+}
+.box{
+    height: 17vmin;
+    width: 17vmin;
+    border-radius: 1rem;
+    /* border: none; */
+    border: 2px solid black;
+    box-shadow: 0 0 1rem rgba(213, 210, 218, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    background-color: #105ac1eb;
+}
+.btn{
+    background-color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    border: none;
+    color:solid red;
+    padding: 1rem;
+}
+.btn1{
+    background-color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    border: none;
+    color: solid red;
+    padding: 1rem;
+    margin: 1rem;
+}
+ .btn:hover,
+ .btn1:hover{
+  filter: brightness(1.2);
+  transform: scale(1.06, 1.06);
+}
+.info{
+    font-size: 30px;
+    margin: 10px;
+    color: #dededb;
+    background-color: purple;
+}
+.line{
+    background-color: white;
+    height: 5px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+.msgContainer{
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    height: 10vmin;
+    font-weight: 900;
+}
+#para{
+    font-size: 40px;
+    color: rgb(244, 242, 240);
+}
+.hide{
+    display: none;
+}
+.backgrd{
+    background-color:chocolate;
+    /* background-image: url("./Images/firework.gif"); */
+}
+.blink{
+    animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
